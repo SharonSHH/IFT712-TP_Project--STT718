@@ -102,7 +102,6 @@ if method == "AdaBoost":
     classifier = AdaBoost()
 elif method == "RandomForest":
     y_train = dm.y_train_integer
-    SelectKBest(chi2, k=30).fit(x_train, y_train)
     classifier = RandomForest()
 elif method == "SVM":
     y_train = dm.y_train_strings
